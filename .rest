@@ -1,0 +1,26 @@
+GET http://localhost:3000/info/users HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJUZWwiOiIxIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzMxNzkwMjg4LCJleHAiOjE3MzE3OTM4ODh9.4lMB6fGu4_JoH1yFreFYkSdYhQmCjelAePIXiVyTyKE
+
+###
+GET http://localhost:3000/ HTTP/1.1
+
+###
+POST http://localhost:3000/auth/register-admin HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJUZWwiOiIzIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTczMTk5NjY2OSwiZXhwIjoxNzMyMDAwMjY5fQ.Fszzc9YKtzFm2ngnRk0gKc-29l6EikcYjk0Aav_3csM
+
+{
+    "tel": "4",
+    "password": "4",
+    "name": "admin4"
+}
+
+###
+POST http://localhost:3000/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "tel": "3",
+    "password": "3"
+}
