@@ -64,7 +64,6 @@ const getAllBranches = async () => {
   } catch (error: any) {
     branchesData.value = null
     const errorMessage = error?.response?.data?.message || 'An error occurred.'
-    showToast(errorMessage, 'destructive')
   }
 }
 
